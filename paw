@@ -99,9 +99,11 @@ def bezier_mouse(location, size, panelHeight): ##move mouse to middle of element
 # Disable pyautogui pauses
 pyautogui.MINIMUM_DURATION = 0
 pyautogui.MINIMUM_SLEEP = 0
-pyautogui.FAILSAFE = False # avoid Exception when mouse in in a top corner
 pyautogui.PAUSE = 0
+# avoid Exception when mouse in in a top corner
+pyautogui.FAILSAFE = False
 
+# instanciate Chrome websriver
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(0.5)

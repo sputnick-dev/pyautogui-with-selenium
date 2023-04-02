@@ -16,8 +16,9 @@ def slow_type(element, text: str):
         sleep(randfloat(0.05,0.3))
 
 def resting_mouse(): #move mouse to right of screen
+    panelWidht = driver.execute_script('return window.outerWidth;')
     start = pyautogui.position()
-    end = random.randint(1600,1750), random.randint(400,850)
+    end = random.randint(panelWidht-100, panelWidht), random.randint(400,850)
 
     x2 = (start[0] + end[0])/2 #midpoint x
     y2 = (start[1] + end[1]) / 2 ##midpoint y
@@ -38,7 +39,7 @@ def resting_mouse(): #move mouse to right of screen
     curve = bezier.Curve(points, degree)
 
     curve_steps = 70  # How many points the curve should be split into. Each is a separate pyautogui.moveTo() execution
-    delay = 0.005  # Time between movements. 1/curve_steps = 1 second for entire curve
+    delay = 0.008  # Time between movements. 1/curve_steps = 1 second for entire curve
 
     # Move the mouse
     for j in range(1, curve_steps + 1):
@@ -84,7 +85,7 @@ def bezier_mouse(location, size, panelHeight): ##move mouse to middle of element
     curve = bezier.Curve(points, degree)
 
     curve_steps = 70  # How many points the curve should be split into. Each is a separate pyautogui.moveTo() execution
-    delay = 0.005  # Time between movements. 1/curve_steps = 1 second for entire curve
+    delay = 0.008  # Time between movements. 1/curve_steps = 1 second for entire curve
 
     # Move the mouse
     for j in range(1, curve_steps + 1):
@@ -110,7 +111,7 @@ try:
 except TimeoutException:
     driver.execute_script("window.stop();")
 
-sleep(3)
+sleep(2)
 e1 = driver.find_element(By.ID, "change-me-paw")
 e2 = driver.find_element(By.ID, "textarea")
 

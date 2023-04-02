@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-import os
-import datetime
 import random
 import bezier
 import pyautogui
 import numpy as np
-import Xlib.display
 from time import sleep
 from random import uniform as randfloat
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
-from pyvirtualdisplay.smartdisplay import SmartDisplay
 from selenium import webdriver
 
 def slow_type(element, text: str):

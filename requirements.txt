@@ -1,5 +1,4 @@
 python-xlib
-PyVirtualDisplay
 numpy
 selenium
 pyautogui

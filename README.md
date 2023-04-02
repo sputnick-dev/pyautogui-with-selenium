@@ -6,12 +6,11 @@ https://youtu.be/JFb-rKBTUlc
 
 OS packages (Linux):
 
-* `python3-xlib`
 * `python3-tk`
 * `python3-dev`
 * `pip3`
-* `xvfb`
-* `xserver-xephyr`
+* `xvfb`            # or real Xorg
+* `xserver-xephyr`  # or real Xorg
 
 #### Usage
 

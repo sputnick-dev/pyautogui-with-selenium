@@ -1,6 +1,6 @@
 ### Pure Python
 
-https://youtu.be/JFb-rKBTUlc
+https://youtu.be/zZfPST2QS-g
 
 #### Requirements
 

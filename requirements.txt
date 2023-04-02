@@ -1,0 +1,6 @@
+python-xlib
+PyVirtualDisplay
+pillow
+numpy
+selenium
+pyautogui

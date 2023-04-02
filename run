@@ -1,0 +1,10 @@
+#!/bin/bash
+
+[[ ! -e .req ]] && pip3 install -r requirements.txt && touch .req
+cd tests/
+python3 -m http.server &
+pid=$?
+cd ..
+sleep 1
+./paw
+kill $pid

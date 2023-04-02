@@ -42,7 +42,7 @@ def resting_mouse(): #move mouse to right of screen
     curve = bezier.Curve(points, degree)
 
     curve_steps = 70  # How many points the curve should be split into. Each is a separate pyautogui.moveTo() execution
-    delay = 0.05  # Time between movements. 1/curve_steps = 1 second for entire curve
+    delay = 0.005  # Time between movements. 1/curve_steps = 1 second for entire curve
 
     # Move the mouse
     for j in range(1, curve_steps + 1):
@@ -88,7 +88,7 @@ def bezier_mouse(location, size, panelHeight): ##move mouse to middle of element
     curve = bezier.Curve(points, degree)
 
     curve_steps = 70  # How many points the curve should be split into. Each is a separate pyautogui.moveTo() execution
-    delay = 0.05  # Time between movements. 1/curve_steps = 1 second for entire curve
+    delay = 0.005  # Time between movements. 1/curve_steps = 1 second for entire curve
 
     # Move the mouse
     for j in range(1, curve_steps + 1):

@@ -114,21 +114,21 @@ except TimeoutException:
     driver.execute_script("window.stop();")
 
 sleep(3)
-e1 = driver.find_element(By.ID, "change-me-paw") ##name for nav menu
-e2 = driver.find_element(By.ID, "textarea") ##name for nav menu
+e1 = driver.find_element(By.ID, "change-me-paw")
+e2 = driver.find_element(By.ID, "textarea")
 
 panelHeight = driver.execute_script('return window.outerHeight - window.innerHeight;')
 
-location1 = e1.location ## coords of element
-location2 = e2.location ## coords of element
-size1 = e1.size ## size of element
-size2 = e2.size ## size of element
+location1 = e1.location ## coords of element1
+location2 = e2.location ## coords of element2
+size1 = e1.size ## size of element1
+size2 = e2.size ## size of element2
 sleep(3)
 bezier_mouse(location1, size1, panelHeight)
 e1.click()
 sleep(2)
 bezier_mouse(location2, size2, panelHeight)
-slow_type(e2, 'I type like a human...')
+slow_type(e2, 'I type like a human being...')
 sleep(2)
 resting_mouse()
 sleep(2)

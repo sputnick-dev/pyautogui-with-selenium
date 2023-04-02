@@ -15,6 +15,8 @@ OS packages (Linux):
 #### Usage
 
 ```
+git clone https://github.com/sputnick-dev/pyautogui-with-selenium.git
+cd pyautogui-with-selenium
 ./run
 ```
 

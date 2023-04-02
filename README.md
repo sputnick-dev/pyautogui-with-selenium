@@ -1,5 +1,7 @@
 ### Pure Python
 
+https://youtu.be/JFb-rKBTUlc
+
 #### Requirements
 
 OS packages (Linux):

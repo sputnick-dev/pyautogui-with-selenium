@@ -116,16 +116,13 @@ except TimeoutException:
 sleep(3)
 e1 = driver.find_element(By.ID, "change-me-paw") ##name for nav menu
 e2 = driver.find_element(By.ID, "textarea") ##name for nav menu
-e3 = driver.find_element(By.XPATH, '//a[text()="pyautogui-with-selenium"]') ##name for nav menu
 
 panelHeight = driver.execute_script('return window.outerHeight - window.innerHeight;')
 
 location1 = e1.location ## coords of element
 location2 = e2.location ## coords of element
-location3 = e3.location ## coords of element
 size1 = e1.size ## size of element
 size2 = e2.size ## size of element
-size3 = e3.size ## size of element
 sleep(3)
 bezier_mouse(location1, size1, panelHeight)
 e1.click()
@@ -134,8 +131,6 @@ bezier_mouse(location2, size2, panelHeight)
 slow_type(e2, 'I type like a human...')
 sleep(2)
 resting_mouse()
-bezier_mouse(location3, size3, panelHeight)
-e3.click()
 sleep(2)
 driver.close()
 

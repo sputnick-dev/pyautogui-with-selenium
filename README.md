@@ -19,5 +19,6 @@ OS packages (Linux):
 
 ## Links
 
-* https://github.com/claudiobizzotto/pyautogui-with-selenium.git (fork)
+Based on:
+* https://github.com/claudiobizzotto/pyautogui-with-selenium.git
 * https://www.binarydefense.com/mimicking-human-activity-using-selenium-and-python/

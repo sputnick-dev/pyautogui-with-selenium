@@ -15,7 +15,8 @@ def slow_type(element, text: str):
         element.send_keys(character)
         sleep(randfloat(0.05,0.3))
 
-def resting_mouse(): #move mouse to right of screen
+def resting_mouse():
+    """move mouse to right of screen."""
     panelWidht = driver.execute_script('return window.outerWidth;')
     start = pyautogui.position()
     end = random.randint(panelWidht-100, panelWidht), random.randint(400,850)
@@ -50,7 +51,8 @@ def resting_mouse(): #move mouse to right of screen
         pyautogui.sleep(delay)  # Wait delay
     sleep(2)
 
-def bezier_mouse(location, size, panelHeight): ##move mouse to middle of element
+def bezier_mouse(location, size, panelHeight):
+    """move mouse to middle of element."""
     x, relY = location["x"], location["y"] ##abs X and relative Y
     absY = relY + panelHeight
     w, h = size["width"], size["height"]

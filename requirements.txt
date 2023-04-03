@@ -1,3 +1,4 @@
+bezier
 python-xlib
 numpy
 selenium

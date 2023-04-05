@@ -9,8 +9,8 @@ OS packages (Linux):
 * `python3-tk`
 * `python3-dev`
 * `pip3`
-* `xvfb`            # or real Xorg
-* `xserver-xephyr`  # or real Xorg
+* `xvfb`             or real Xorg
+* `xserver-xephyr`   or real Xorg
 
 #### Usage
 
